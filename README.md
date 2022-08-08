@@ -26,6 +26,26 @@ The main difference for NDP is less customisation options but in favour of less 
 
 The aim of this project is to make it as quick and easy as possible to create a functioning full stack application to create products. Therefore, lots of the choices made are based on our current stack and workflow. However, we hope you find them sane choices. Any recommendations and advice is welcome. 
 
+## Warning
+
+The current project consists of a working project, think of this repo as the main example repo. Cookiecutter is used to create your own version from [ndp-cookie](https://github.com/whiskey-chocolate/ndp-cookie).
+
+## Dependencies
+
+1. Install [Docker](https://www.docker.com/)
+2. Install [Cookiecutter](https://github.com/cookiecutter/cookiecutter). Recommend to do this in a virtualenv
+```
+# Create a virtual environment to isolate our package dependencies locally
+python3 -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+
+# Install Django and Django REST framework into the virtual environment
+pip install cookiecutter
+
+# Set up a new ndp project 
+cookiecutter https://github.com/whiskey-chocolate/ndp-cookie.git
+```
+
 ## Installation 
 1. `cookiecutter https://github.com/whiskey-chocolate/ndp-cookie.git`
 2. Update local host for https
