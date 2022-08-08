@@ -27,7 +27,7 @@ The main difference for NDP is less customisation options but in favour of less 
 The aim of this project is to make it as quick and easy as possible to create a functioning full stack application to create products. Therefore, lots of the choices made are based on our current stack and workflow. However, we hope you find them sane choices. Any recommendations and advice is welcome. 
 
 ## Installation 
-1. `cookiecutter github.com link`
+1. `cookiecutter https://github.com/whiskey-chocolate/ndp-cookie.git`
 2. Update local host for https
    1. `sudo chown -R {username} /private/etc/hosts` (updates ownership of hosts files)
    2. `chmod 755 /private/etc/hosts` (makes hosts file writable)
@@ -38,7 +38,8 @@ The aim of this project is to make it as quick and easy as possible to create a 
    3. Rename certs to `domain.pem` and `domain-key.pem`
 4. Update `.env` based on `.env.example`, adding Firebase credentials (see here [Google Firebase Docs](https://firebase.google.com/docs/admin/setup))
 5. Run `docker-compose up --build -d` to start all services for development
-6. Visit `localhost:3000` and you should be greeted with a welcome page for your project and if you wait a few seconds then you will see `{"message": "System up."} if the api and database have started up correctly.
+6. Visit `localhost:3000` and you should be greeted with a welcome page for your project and if you wait a few seconds then you will see `{"message": "System up."} if the api and database have started up correctly
+7. Visit `https://{project-slug}-api.local` to see the backend API
 
 **Note: docker-compose is only used for development. Production builds should not use this config. This is because Heroku and Vercel have been chosen for managed deployment.**
 
