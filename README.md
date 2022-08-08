@@ -35,11 +35,11 @@ The current project consists of a working project, think of this repo as the mai
 1. Install [Docker](https://www.docker.com/)
 2. Install [Cookiecutter](https://github.com/cookiecutter/cookiecutter). Recommend to do this in a virtualenv
 ```
-# Create a virtual environment to isolate our package dependencies locally
+# Create a virtual environment to isolate our cookiecutter locally
 python3 -m venv env
 source env/bin/activate  # On Windows use `env\Scripts\activate`
 
-# Install Django and Django REST framework into the virtual environment
+# Install cookiecutter into the virtual environment
 pip install cookiecutter
 
 # Set up a new ndp project 
