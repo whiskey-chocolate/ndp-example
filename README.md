@@ -1,4 +1,4 @@
-# Welcome to NDP 
+# Welcome to NDP - An Example Application
 
 You can use this repo as a template for a full stack dockerized web app, consisting of: 
 - Next.js 
